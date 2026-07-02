@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-lz81b6rp.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-B0KH3IDH.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/__root.tsx",
@@ -11,7 +11,7 @@ var tsrStartManifest = () => ({ routes: {
 			"/testing"
 		],
 		preloads: [
-			"/assets/index-BtmH5qcO.js",
+			"/assets/index-BRqpmX2Y.js",
 			"/assets/createLucideIcon-B4jqqaQH.js",
 			"/assets/link-Cy6Edvkj.js",
 			"/assets/useMatch-DHUhGikW.js"
@@ -19,17 +19,17 @@ var tsrStartManifest = () => ({ routes: {
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-BtmH5qcO.js"
+			src: "/assets/index-BRqpmX2Y.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-BRwOxbR4.js",
+			"/assets/routes-pTxGyXbC.js",
 			"/assets/arrow-right-x1QvxpNl.js",
 			"/assets/beaker-DWQ9Zs4M.js",
-			"/assets/StatCounter-BU-D1e1x.js",
+			"/assets/StatCounter-BB4HN-1O.js",
 			"/assets/wrench-BbAWkrTK.js",
 			"/assets/Reveal-DMCV90pd.js"
 		]
@@ -38,21 +38,21 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/about-us.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-us-CB5BhVHo.js",
-			"/assets/StatCounter-BU-D1e1x.js",
+			"/assets/about-us-b7lDVUKW.js",
+			"/assets/StatCounter-BB4HN-1O.js",
 			"/assets/Reveal-DMCV90pd.js"
 		]
 	},
 	"/contact-us": {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/contact-us.tsx",
 		children: void 0,
-		preloads: ["/assets/contact-us-DGHy5Ofx.js", "/assets/Reveal-DMCV90pd.js"]
+		preloads: ["/assets/contact-us-D1ANG2Ph.js", "/assets/Reveal-DMCV90pd.js"]
 	},
 	"/products": {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/products.tsx",
 		children: ["/products/$slug"],
 		preloads: [
-			"/assets/products-CFrVN-ni.js",
+			"/assets/products-CKQ5ob2G.js",
 			"/assets/arrow-right-x1QvxpNl.js",
 			"/assets/wrench-BbAWkrTK.js",
 			"/assets/Reveal-DMCV90pd.js"
@@ -62,7 +62,7 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/testing.tsx",
 		children: ["/testing/$slug"],
 		preloads: [
-			"/assets/testing-DTQ8ayJ8.js",
+			"/assets/testing-D45KTQd7.js",
 			"/assets/arrow-right-x1QvxpNl.js",
 			"/assets/beaker-DWQ9Zs4M.js",
 			"/assets/Reveal-DMCV90pd.js"
@@ -71,12 +71,12 @@ var tsrStartManifest = () => ({ routes: {
 	"/products/$slug": {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/products.$slug.tsx",
 		children: void 0,
-		preloads: ["/assets/products._slug-CdiBRVH4.js", "/assets/chevron-right-DbDoHs_-.js"]
+		preloads: ["/assets/products._slug-BHMTJGF_.js", "/assets/chevron-right-DbDoHs_-.js"]
 	},
 	"/testing/$slug": {
 		filePath: "C:/Users/kabil/Downloads/labify-blueprint-main/labify-blueprint-main/src/routes/testing.$slug.tsx",
 		children: void 0,
-		preloads: ["/assets/testing._slug-DpOmQXYZ.js", "/assets/chevron-right-DbDoHs_-.js"]
+		preloads: ["/assets/testing._slug-Do-8vBh_.js", "/assets/chevron-right-DbDoHs_-.js"]
 	}
 } });
 //#endregion

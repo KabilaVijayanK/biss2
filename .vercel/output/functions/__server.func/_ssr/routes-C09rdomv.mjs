@@ -1,12 +1,10 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as about_lab_default, t as StatCounter } from "./StatCounter-CEhTe0R0.mjs";
 import { t as Reveal } from "./Reveal-B5RqkReU.mjs";
+import { t as StatCounter } from "./StatCounter-487dagxc.mjs";
 import { C as Gauge, F as Beaker, L as ArrowRight, N as Car, O as Cpu, P as Building2, T as Factory, a as Wind, c as ShieldCheck, f as Microscope, i as Wrench, t as Zap, u as Plane, v as Layers, w as FlaskConical, x as GraduationCap, y as HeartPulse } from "../_libs/lucide-react.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-k4043p2K.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-C09rdomv.js
 var import_jsx_runtime = require_jsx_runtime();
-var hero_lab_default = "/assets/hero-lab-NuROhekz.jpg";
-var cta_banner_default = "/assets/cta-banner-DCJ14K9A.jpg";
 var services = [
 	{
 		title: "Mechanical Testing",
@@ -153,18 +151,18 @@ var certifications = [
 function Home() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-			className: "relative isolate overflow-hidden bg-slate-950",
+			className: "relative isolate overflow-hidden bg-slate-50",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "absolute inset-0",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					src: hero_lab_default,
+					src: "/assets/banner.png",
 					alt: "BISS Labs testing facility with a universal testing machine",
 					className: "h-full w-full object-cover opacity-80",
 					width: 1920,
 					height: 1080
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-slate-950/80 backdrop-blur-sm" })]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "relative container-x py-24 lg:py-20",
+				className: "relative container-x py-16 lg:py-24",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "mx-auto flex max-w-4xl flex-col items-center text-center gap-8 transform -translate-y-4",
 					children: [
@@ -370,37 +368,73 @@ function Home() {
 				})]
 			})
 		}),
-		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-			className: "py-20 bg-background",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "container-x",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-					className: "text-3xl lg:text-4xl font-bold text-brand-deep",
-					children: "Applications"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-3 text-muted-foreground max-w-2xl",
-					children: "Testing across a wide variety of engineering materials and industrial applications."
-				})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5",
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+			className: "py-24 bg-gradient-to-b from-background via-background to-surface/50 relative overflow-hidden",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "absolute inset-0 pointer-events-none",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-20 right-1/4 w-72 h-72 bg-amber/5 rounded-full blur-3xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute bottom-10 left-1/3 w-96 h-96 bg-brand-deep/5 rounded-full blur-3xl" })]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "container-x relative z-10",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mb-16",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "inline-block px-3 py-1 bg-amber/10 rounded-full mb-4",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "text-xs font-semibold text-amber uppercase tracking-widest",
+								children: "Applications & Solutions"
+							})
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "text-4xl lg:text-5xl font-bold text-brand-deep mb-4",
+							children: "Industry Testing Expertise"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-lg text-muted-foreground max-w-3xl leading-relaxed",
+							children: "From aerospace composites to medical implants, our comprehensive testing solutions span diverse engineering materials and industrial applications."
+						})
+					]
+				}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6",
 					children: applications.map((a, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-						delay: i * 60,
+						delay: i * 50,
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "rounded-lg border border-border p-5 hover:border-amber hover:shadow-md transition h-full",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FlaskConical, { className: "w-6 h-6 text-amber" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
-									className: "mt-3 font-bold text-brand-deep",
-									children: a.title
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-xs text-muted-foreground mt-1.5",
-									children: a.desc
-								})
-							]
+							className: "group relative h-full",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "relative h-full bg-white/50 backdrop-blur-sm border border-white/20 rounded-2xl p-7 hover:bg-white/60 transition-all duration-500 overflow-hidden",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-amber/0 via-amber/0 to-amber/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "relative z-10",
+										children: [
+											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "relative inline-flex items-center justify-center mb-6",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-br from-amber/20 to-amber/10 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 scale-150 group-hover:scale-175" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: "relative flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-amber/30 to-amber/20 group-hover:from-amber/40 group-hover:to-amber/30 transition-all duration-500 border border-amber/40 group-hover:border-amber/60",
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FlaskConical, { className: "w-8 h-8 text-amber group-hover:scale-110 transition-transform duration-500" })
+												})]
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+												className: "text-lg font-bold text-brand-deep mb-3 group-hover:text-amber transition-colors duration-500",
+												children: a.title
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/80 transition-colors duration-500",
+												children: a.desc
+											}),
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "mt-5 h-1 w-0 bg-gradient-to-r from-amber to-amber/0 group-hover:w-full transition-all duration-500" })
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none",
+										style: { background: "linear-gradient(135deg, rgba(251,146,60,0.3) 0%, transparent 50%)" }
+									})
+								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -top-1 -right-1 w-10 h-10 bg-gradient-to-br from-amber to-amber/50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm scale-0 group-hover:scale-100" })]
 						})
 					}, a.title))
 				})]
-			})
+			})]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 			className: "py-20 bg-surface",
@@ -450,7 +484,7 @@ function Home() {
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "lg:col-span-3 rounded-lg overflow-hidden",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: about_lab_default,
+						src: "/assets/banner.png",
 						alt: "BISS Labs engineers reviewing test data",
 						className: "w-full h-full object-cover",
 						width: 1600,
@@ -546,7 +580,7 @@ function Home() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				src: cta_banner_default,
+				src: "/assets/banner.png",
 				alt: "Close-up of an extensometer on a metal specimen",
 				className: "absolute inset-0 h-full w-full object-cover",
 				width: 1600,

@@ -1,9 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/StatCounter-CEhTe0R0.js
+//#region node_modules/.nitro/vite/services/ssr/assets/StatCounter-487dagxc.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var about_lab_default = "/assets/about-lab-CKQ7WLa7.jpg";
 function StatCounter({ end, suffix = "", prefix = "", duration = 1600 }) {
 	const ref = (0, import_react.useRef)(null);
 	const [value, setValue] = (0, import_react.useState)(0);
@@ -36,4 +35,4 @@ function StatCounter({ end, suffix = "", prefix = "", duration = 1600 }) {
 	});
 }
 //#endregion
-export { about_lab_default as n, StatCounter as t };
+export { StatCounter as t };

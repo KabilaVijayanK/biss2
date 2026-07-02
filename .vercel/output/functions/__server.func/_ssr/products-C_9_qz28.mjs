@@ -3,32 +3,50 @@ import { t as Reveal } from "./Reveal-B5RqkReU.mjs";
 import { L as ArrowRight, i as Wrench } from "../_libs/lucide-react.mjs";
 import { n as products } from "./products-DRThLdRL.mjs";
 import { d as useMatches, f as Outlet, g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/products-C_F9yd70.js
+//#region node_modules/.nitro/vite/services/ssr/assets/products-C_9_qz28.js
 var import_jsx_runtime = require_jsx_runtime();
 function ProductsLayout() {
 	if (useMatches().some((m) => m.routeId === "/products/$slug")) return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {});
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProductsIndex, {});
 }
 function ProductsIndex() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		className: "bg-brand-deep text-white py-20",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "container-x",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "text-xs uppercase tracking-widest text-amber font-semibold",
-					children: "Products"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-					className: "mt-3 text-5xl lg:text-6xl font-extrabold",
-					children: "Testing Systems & Instruments"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-4 text-lg text-white/70 max-w-2xl",
-					children: "Twelve product families engineered for precision — from load cells and extensometers to full multi-axis structural systems."
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "relative isolate overflow-hidden bg-slate-950",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "absolute inset-0",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: "/assets/banner.png",
+					alt: "BISS Labs products and equipment",
+					className: "h-full w-full object-cover opacity-50",
+					width: 1920,
+					height: 1080
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/60 to-brand-deep/40" })]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -top-40 -right-40 w-96 h-96 bg-amber/20 rounded-full blur-3xl opacity-40" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -bottom-20 -left-20 w-80 h-80 bg-brand-deep/30 rounded-full blur-3xl opacity-30" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute top-1/2 right-1/3 w-72 h-72 bg-amber/10 rounded-full blur-2xl opacity-20" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "relative isolate container-x py-16 lg:py-24",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "max-w-3xl",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/15 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "flex h-2 w-2 rounded-full bg-amber" }), "Products & Solutions"]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+							className: "mt-6 text-5xl lg:text-7xl font-extrabold text-white leading-tight",
+							children: "Testing Systems & Instruments"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-6 text-xl text-white/80 max-w-2xl leading-relaxed",
+							children: "Twelve product families engineered for precision — from load cells and extensometers to full multi-axis structural systems."
+						})
+					]
 				})
-			]
-		})
+			})
+		]
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		className: "py-20 bg-background",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {

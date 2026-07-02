@@ -187,7 +187,7 @@ function Home() {
       <section className="relative isolate overflow-hidden bg-slate-50">
         <div className="absolute inset-0">
           <img
-            src="/banner.png"
+            src="/assets/banner.png"
             alt="BISS Labs testing facility with a universal testing machine"
             className="h-full w-full object-cover opacity-80"
             width={1920}
@@ -456,7 +456,7 @@ function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 items-stretch container-x py-20">
           <div className="lg:col-span-3 rounded-lg overflow-hidden">
             <img
-              src="/banner.png"
+              src="/src/assets/about-lab.jpg"
               alt="BISS Labs engineers reviewing test data"
               className="w-full h-full object-cover"
               width={1600}
@@ -527,7 +527,7 @@ function Home() {
       {/* Diagonal CTA banner */}
       <section className="relative overflow-hidden">
         <img
-          src="/banner.png"
+          src="/src/assets/cta-banner.jpg"
           alt="Close-up of an extensometer on a metal specimen"
           className="absolute inset-0 h-full w-full object-cover"
           width={1600}

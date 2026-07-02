@@ -46,7 +46,7 @@ function ProductDetail() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/banner.png"
+            src="/assets/banner.png"
             alt="Product detail banner"
             className="h-full w-full object-cover opacity-50"
             width={1920}
