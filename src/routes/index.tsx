@@ -187,7 +187,7 @@ function Home() {
       <section className="relative isolate overflow-hidden bg-slate-50">
         <div className="absolute inset-0">
           <img
-            src="/assets/banner.png"
+            src="/assets/hero-banner.png"
             alt="BISS Labs testing facility with a universal testing machine"
             className="h-full w-full object-cover opacity-80"
             width={1920}

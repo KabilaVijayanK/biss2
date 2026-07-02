@@ -3,7 +3,7 @@ import { t as Reveal } from "./Reveal-B5RqkReU.mjs";
 import { t as StatCounter } from "./StatCounter-487dagxc.mjs";
 import { C as Gauge, F as Beaker, L as ArrowRight, N as Car, O as Cpu, P as Building2, T as Factory, a as Wind, c as ShieldCheck, f as Microscope, i as Wrench, t as Zap, u as Plane, v as Layers, w as FlaskConical, x as GraduationCap, y as HeartPulse } from "../_libs/lucide-react.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-C09rdomv.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CS9SS_1-.js
 var import_jsx_runtime = require_jsx_runtime();
 var services = [
 	{
@@ -155,7 +155,7 @@ function Home() {
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "absolute inset-0",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					src: "/assets/banner.png",
+					src: "/assets/hero-banner.png",
 					alt: "BISS Labs testing facility with a universal testing machine",
 					className: "h-full w-full object-cover opacity-80",
 					width: 1920,
@@ -484,7 +484,7 @@ function Home() {
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "lg:col-span-3 rounded-lg overflow-hidden",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: "/assets/banner.png",
+						src: "/src/assets/about-lab.jpg",
 						alt: "BISS Labs engineers reviewing test data",
 						className: "w-full h-full object-cover",
 						width: 1600,
@@ -580,7 +580,7 @@ function Home() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 			className: "relative overflow-hidden",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				src: "/assets/banner.png",
+				src: "/src/assets/cta-banner.jpg",
 				alt: "Close-up of an extensometer on a metal specimen",
 				className: "absolute inset-0 h-full w-full object-cover",
 				width: 1600,

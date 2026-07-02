@@ -7,7 +7,7 @@ import { t as Route$7 } from "./products._slug-Ckjj2R4b.mjs";
 import { r as testingServices } from "./testing-DVrxKiIT.mjs";
 import { t as Route$8 } from "./testing._slug-C1_V0Dpi.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-D1qSqAK_.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-J_wgVsa1.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-NUvp--s5.css";
@@ -968,7 +968,7 @@ var Route$1 = createFileRoute("/about-us")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-C09rdomv.mjs");
+var $$splitComponentImporter = () => import("./routes-CS9SS_1-.mjs");
 var Route = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
 var TestingRoute = Route$5.update({
 	id: "/testing",
