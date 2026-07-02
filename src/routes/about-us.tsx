@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Target, Compass, Sparkles, Users, Award, Globe2, ShieldCheck, Zap, HeartHandshake } from "lucide-react";
-import aboutImg from "@/assets/about-lab.jpg";
 import { Reveal } from "@/components/common/Reveal";
 import { StatCounter } from "@/components/common/StatCounter";
 
@@ -36,19 +35,41 @@ const stats = [
 function About() {
   return (
     <>
-      <section className="bg-brand-deep text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(circle at 20% 30%, oklch(0.72 0.17 55 / 0.35), transparent 60%)" }} />
-        <div className="container-x relative">
-          <div className="text-xs uppercase tracking-widest text-amber font-semibold">About Us</div>
-          <h1 className="mt-3 text-5xl lg:text-6xl font-extrabold">About BISS Labs</h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">Engineering confidence through knowledge, innovation and precision.</p>
+      <section className="relative isolate overflow-hidden bg-slate-950">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="BISS Labs testing facility"
+            className="h-full w-full object-cover opacity-60"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-transparent to-slate-950/30" />
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber/10 rounded-full blur-3xl opacity-50" />
+        <div className="absolute bottom-20 -left-40 w-80 h-80 bg-brand-deep/20 rounded-full blur-3xl opacity-30" />
+
+        {/* Content */}
+        <div className="relative isolate container-x py-16 lg:py-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber/30 bg-amber/10 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6">
+              <span className="flex h-2 w-2 rounded-full bg-amber" />
+              About Our Organization
+            </div>
+            <h1 className="mt-6 text-5xl lg:text-7xl font-extrabold text-white leading-tight">About BISS Labs</h1>
+            <p className="mt-6 text-xl text-white/80 max-w-2xl leading-relaxed">Engineering confidence through knowledge, innovation and precision.</p>
+          </div>
         </div>
       </section>
 
       <section className="py-20 bg-background">
         <div className="container-x grid lg:grid-cols-2 gap-14 items-center">
           <Reveal>
-            <img src={aboutImg} alt="BISS Labs engineers at a materials testing bench" className="rounded-lg shadow-lg w-full" width={1600} height={1100} loading="lazy" />
+            <img src="/banner.png" alt="BISS Labs engineers at a materials testing bench" className="rounded-lg shadow-lg w-full" width={1600} height={1100} loading="lazy" />
           </Reveal>
           <Reveal delay={100}>
             <h2 className="text-3xl lg:text-4xl font-bold text-brand-deep">Company Overview</h2>

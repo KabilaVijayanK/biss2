@@ -7,10 +7,10 @@ import { t as Route$7 } from "./products._slug-BL-VPAID.mjs";
 import { r as testingServices } from "./testing-DVrxKiIT.mjs";
 import { t as Route$8 } from "./testing._slug-Byg6CapK.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-tlseWRK7.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DOlN-yt8.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-7hKyWqkX.css";
+var styles_default = "/assets/styles-E8PvTz8V.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -231,11 +231,6 @@ function Navbar() {
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "container-x flex justify-end gap-6 py-2",
 					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "#",
-							className: "hover:text-amber",
-							children: "Customer Portal"
-						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "|" }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 							href: "#",
@@ -980,7 +975,7 @@ var Route$1 = createFileRoute("/about-us")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-DFLisyhe.mjs");
+var $$splitComponentImporter = () => import("./routes-k4043p2K.mjs");
 var Route = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
 var TestingRoute = Route$5.update({
 	id: "/testing",

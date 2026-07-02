@@ -19,9 +19,6 @@ import {
   Gauge,
   Microscope,
 } from "lucide-react";
-import heroImg from "@/assets/hero-lab.jpg";
-import ctaImg from "@/assets/cta-banner.jpg";
-import aboutImg from "@/assets/about-lab.jpg";
 import { Reveal } from "@/components/common/Reveal";
 import { StatCounter } from "@/components/common/StatCounter";
 
@@ -35,54 +32,72 @@ const services = [
     desc: "Strength, fatigue, fracture and creep evaluation on servo-hydraulic and electromechanical systems.",
     to: "/testing/mechanical-testing",
     icon: Gauge,
+    image:
+      "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Structural Testing",
     desc: "Full-scale multi-axis validation with 16 servo-hydraulic actuators on a 4 T-slot bed.",
     to: "/testing/structural-testing",
     icon: Building2,
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Universal Testing Machines",
     desc: "Precision UTMs for tensile, compression, flexural, peel and shear across materials.",
     to: "/products/universal-testing-machines",
     icon: Wrench,
+    image:
+      "https://images.unsplash.com/photo-1581092795365-d8f6b3e9c0a6?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Composite Testing",
     desc: "GFRP and CFRP mechanical characterization to ASTM and ISO standards.",
     to: "/testing/gfrp-composite-testing",
     icon: Layers,
+    image:
+      "https://images.unsplash.com/photo-1581092334207-0b1f5f6a8b06?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Medical Device Testing",
     desc: "Sutures, bone screws, implants and drug-delivery device evaluation for regulatory support.",
     to: "/testing/medical-device-testing",
     icon: HeartPulse,
+    image:
+      "https://images.unsplash.com/photo-1582719478179-6f9e3b9d9c3f?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Calibration Equipment & Services",
     desc: "Force, displacement and extensometer calibration aligned with national standards.",
     to: "/products/calibration-equipment",
     icon: Beaker,
+    image:
+      "https://images.unsplash.com/photo-1555633512-4b6f1f5b2b5b?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Damper Test Systems",
     desc: "Single, dual and multi-station rigs for suspension durability and dynamic behaviour.",
     to: "/products/damper-test-systems",
     icon: Cpu,
+    image:
+      "https://images.unsplash.com/photo-1581092795366-3a8f9f6c1f4a?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Testing Software",
     desc: "Automation, data acquisition, ASTM/ISO templates and audit-ready reporting.",
     to: "/products/software",
     icon: Microscope,
+    image:
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "EV Structural Testing",
     desc: "Chassis, battery mounts and motor assemblies under multi-axis road load simulation.",
     to: "/testing/ev-structural-testing",
     icon: Zap,
+    image:
+      "https://images.unsplash.com/photo-1549921296-3f8b66a8d8b6?auto=format&fit=crop&w=1400&q=80",
   },
 ];
 
@@ -169,52 +184,75 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden">
-        <img
-          src={heroImg}
-          alt="BISS Labs testing facility with a universal testing machine"
-          className="absolute inset-0 h-full w-full object-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/95 via-brand-deep/70 to-brand-deep/10" />
-        <div className="relative container-x py-28 lg:py-20">
-          <div className="max-w-2xl">
+      <section className="relative isolate overflow-hidden bg-slate-50">
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="BISS Labs testing facility with a universal testing machine"
+            className="h-full w-full object-cover opacity-80"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" />
+        </div>
+        <div className="relative container-x py-16 lg:py-24">
+          <div className="mx-auto flex max-w-4xl flex-col items-center text-center gap-8 transform -translate-y-4">
             <Reveal>
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 backdrop-blur px-3 py-1 text-xs font-semibold text-white/90 uppercase tracking-widest">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber" /> Precision Engineered ·
-                Performance Proven
+              <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-white/80 shadow-sm backdrop-blur-sm">
+                <span className="flex h-2.5 w-2.5 rounded-full bg-amber" />
+                Precision engineered testing with performance you can trust
               </div>
             </Reveal>
             <Reveal delay={100}>
-              <h1 className="mt-6 text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white">
+              <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
                 Precision Testing
-                <br />
-                <span className="text-amber">Solutions</span>
-                <span className="text-white/90"> for Engineering Excellence</span>
+                <span className="block text-amber">Solutions</span>
+                <span className="block text-white/90">for Engineering Excellence</span>
               </h1>
             </Reveal>
             <Reveal delay={200}>
-              <p className="mt-6 text-lg text-white/80 max-w-xl">
+              <p className="max-w-2xl text-lg leading-8 text-slate-200/85">
                 BISS Labs empowers industries with advanced material testing, mechanical testing and
                 product validation services that ensure reliability, compliance and long-term
                 performance.
               </p>
             </Reveal>
             <Reveal delay={300}>
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="flex flex-col items-center gap-4 sm:flex-row">
                 <Link
                   to="/contact-us"
-                  className="inline-flex items-center gap-2 rounded-md bg-amber px-6 py-3 font-semibold text-amber-foreground shadow-lg hover:brightness-95 hover:-translate-y-0.5 transition"
+                  className="inline-flex items-center gap-2 rounded-full bg-amber px-8 py-4 text-sm font-semibold text-slate-950 shadow-2xl shadow-amber/20 transition hover:-translate-y-0.5 hover:bg-amber-600"
                 >
-                  Request a Quote <ArrowRight className="w-4 h-4" />
+                  Request a Quote
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   to="/contact-us"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/30 bg-white/5 backdrop-blur px-6 py-3 font-semibold text-white hover:bg-white/10 transition"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/20"
                 >
-                  Contact Our Experts
+                  Talk to an Expert
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
+              </div>
+            </Reveal>
+            <Reveal delay={400}>
+              <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-5 text-left shadow-xl shadow-slate-950/20 backdrop-blur-sm">
+                  <p className="text-sm uppercase tracking-[0.3em] text-amber/80">Fast delivery</p>
+                  <p className="mt-3 text-xl font-semibold text-white">Rapid testing turnaround</p>
+                </div>
+                <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-5 text-left shadow-xl shadow-slate-950/20 backdrop-blur-sm">
+                  <p className="text-sm uppercase tracking-[0.3em] text-amber/80">Certified</p>
+                  <p className="mt-3 text-xl font-semibold text-white">NABL, DGAQA and BIS compliance</p>
+                </div>
+                <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-5 text-left shadow-xl shadow-slate-950/20 backdrop-blur-sm">
+                  <p className="text-sm uppercase tracking-[0.3em] text-amber/80">Comprehensive</p>
+                  <p className="mt-3 text-xl font-semibold text-white">Material, mechanical and structural testing</p>
+                </div>
+                <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-5 text-left shadow-xl shadow-slate-950/20 backdrop-blur-sm">
+                  <p className="text-sm uppercase tracking-[0.3em] text-amber/80">Trusted</p>
+                  <p className="mt-3 text-xl font-semibold text-white">Global engineering support</p>
+                </div>
               </div>
             </Reveal>
           </div>
@@ -248,19 +286,20 @@ function Home() {
               return (
                 <Reveal key={s.title} delay={i * 60}>
                   <Link to={s.to} className="group block">
-                    <div className="aspect-[16/10] rounded-lg overflow-hidden bg-gradient-to-br from-brand to-brand-deep relative">
                       <div
-                        className="absolute inset-0 opacity-25"
+                        className="aspect-[16/10] rounded-lg overflow-hidden relative group bg-cover bg-center bg-no-repeat transform transition-transform"
                         style={{
-                          backgroundImage:
-                            "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent 60%)",
+                          backgroundImage: s.image
+                            ? `linear-gradient(to bottom right, rgba(7,12,20,0.45), rgba(2,6,23,0.55)), url(${s.image})`
+                            : undefined,
                         }}
-                      />
-                      <Icon className="absolute right-6 bottom-6 w-24 h-24 text-white/40 group-hover:scale-110 transition-transform" />
-                      <div className="absolute left-6 top-6 text-amber text-xs uppercase tracking-widest font-bold">
-                        Service
+                      >
+                        <div className="absolute inset-0" />
+                        <div className="absolute left-6 top-6 text-amber text-xs uppercase tracking-widest font-bold">
+                          Service
+                        </div>
+                        <Icon className="absolute right-6 bottom-6 w-20 h-20 text-white/40 group-hover:scale-105 transition-transform duration-300" />
                       </div>
-                    </div>
                     <h3 className="mt-5 text-xl font-bold text-brand-deep font-display">
                       {s.title}
                     </h3>
@@ -306,21 +345,71 @@ function Home() {
       </section>
 
       {/* Applications */}
-      <section className="py-20 bg-background">
-        <div className="container-x">
+      <section className="py-24 bg-gradient-to-b from-background via-background to-surface/50 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 right-1/4 w-72 h-72 bg-amber/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-1/3 w-96 h-96 bg-brand-deep/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container-x relative z-10">
           <Reveal>
-            <h2 className="text-3xl lg:text-4xl font-bold text-brand-deep">Applications</h2>
-            <p className="mt-3 text-muted-foreground max-w-2xl">
-              Testing across a wide variety of engineering materials and industrial applications.
-            </p>
+            <div className="mb-16">
+              <div className="inline-block px-3 py-1 bg-amber/10 rounded-full mb-4">
+                <span className="text-xs font-semibold text-amber uppercase tracking-widest">Applications & Solutions</span>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-brand-deep mb-4">
+                Industry Testing Expertise
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
+                From aerospace composites to medical implants, our comprehensive testing solutions span diverse engineering materials and industrial applications.
+              </p>
+            </div>
           </Reveal>
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {applications.map((a, i) => (
-              <Reveal key={a.title} delay={i * 60}>
-                <div className="rounded-lg border border-border p-5 hover:border-amber hover:shadow-md transition h-full">
-                  <FlaskConical className="w-6 h-6 text-amber" />
-                  <h4 className="mt-3 font-bold text-brand-deep">{a.title}</h4>
-                  <p className="text-xs text-muted-foreground mt-1.5">{a.desc}</p>
+              <Reveal key={a.title} delay={i * 50}>
+                <div className="group relative h-full">
+                  {/* Card */}
+                  <div className="relative h-full bg-white/50 backdrop-blur-sm border border-white/20 rounded-2xl p-7 hover:bg-white/60 transition-all duration-500 overflow-hidden">
+                    {/* Gradient background on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber/0 via-amber/0 to-amber/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                    {/* Content */}
+                    <div className="relative z-10">
+                      {/* Icon container */}
+                      <div className="relative inline-flex items-center justify-center mb-6">
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber/20 to-amber/10 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 scale-150 group-hover:scale-175"></div>
+                        <div className="relative flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-amber/30 to-amber/20 group-hover:from-amber/40 group-hover:to-amber/30 transition-all duration-500 border border-amber/40 group-hover:border-amber/60">
+                          <FlaskConical className="w-8 h-8 text-amber group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="text-lg font-bold text-brand-deep mb-3 group-hover:text-amber transition-colors duration-500">
+                        {a.title}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/80 transition-colors duration-500">
+                        {a.desc}
+                      </p>
+
+                      {/* Divider */}
+                      <div className="mt-5 h-1 w-0 bg-gradient-to-r from-amber to-amber/0 group-hover:w-full transition-all duration-500"></div>
+                    </div>
+
+                    {/* Border glow on hover */}
+                    <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                      style={{
+                        background: 'linear-gradient(135deg, rgba(251,146,60,0.3) 0%, transparent 50%)',
+                      }}
+                    ></div>
+                  </div>
+
+                  {/* Floating accent on hover */}
+                  <div className="absolute -top-1 -right-1 w-10 h-10 bg-gradient-to-br from-amber to-amber/50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm scale-0 group-hover:scale-100"></div>
                 </div>
               </Reveal>
             ))}
@@ -367,7 +456,7 @@ function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 items-stretch container-x py-20">
           <div className="lg:col-span-3 rounded-lg overflow-hidden">
             <img
-              src={aboutImg}
+              src="/banner.png"
               alt="BISS Labs engineers reviewing test data"
               className="w-full h-full object-cover"
               width={1600}
@@ -438,7 +527,7 @@ function Home() {
       {/* Diagonal CTA banner */}
       <section className="relative overflow-hidden">
         <img
-          src={ctaImg}
+          src="/banner.png"
           alt="Close-up of an extensometer on a metal specimen"
           className="absolute inset-0 h-full w-full object-cover"
           width={1600}

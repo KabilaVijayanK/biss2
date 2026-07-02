@@ -32,16 +32,36 @@ function ProductsLayout() {
 function ProductsIndex() {
   return (
     <>
-      <section className="bg-brand-deep text-white py-20">
-        <div className="container-x">
-          <div className="text-xs uppercase tracking-widest text-amber font-semibold">Products</div>
-          <h1 className="mt-3 text-5xl lg:text-6xl font-extrabold">
-            Testing Systems & Instruments
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Twelve product families engineered for precision — from load cells and extensometers to
-            full multi-axis structural systems.
-          </p>
+      <section className="relative isolate overflow-hidden bg-slate-950">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="BISS Labs products and equipment"
+            className="h-full w-full object-cover opacity-50"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/60 to-brand-deep/40" />
+        </div>
+        
+        {/* Animated Gradient Circles */}
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-amber/20 rounded-full blur-3xl opacity-40" />
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-brand-deep/30 rounded-full blur-3xl opacity-30" />
+        <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-amber/10 rounded-full blur-2xl opacity-20" />
+
+        {/* Content */}
+        <div className="relative isolate container-x py-16 lg:py-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/15 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6">
+              <span className="flex h-2 w-2 rounded-full bg-amber" />
+              Products & Solutions
+            </div>
+            <h1 className="mt-6 text-5xl lg:text-7xl font-extrabold text-white leading-tight">Testing Systems & Instruments</h1>
+            <p className="mt-6 text-xl text-white/80 max-w-2xl leading-relaxed">
+              Twelve product families engineered for precision — from load cells and extensometers to full multi-axis structural systems.
+            </p>
+          </div>
         </div>
       </section>
       <section className="py-20 bg-background">

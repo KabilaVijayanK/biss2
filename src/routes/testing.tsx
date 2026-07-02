@@ -33,16 +33,35 @@ function TestingLayout() {
 function TestingIndex() {
   return (
     <>
-      <section className="bg-brand-deep text-white py-20">
-        <div className="container-x">
-          <div className="text-xs uppercase tracking-widest text-amber font-semibold">Testing</div>
-          <h1 className="mt-3 text-5xl lg:text-6xl font-extrabold">
-            Engineering Testing Capabilities
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            From metals and composites to full-scale structural validation, our lab covers 15+
-            mechanical test types and 20+ composite methods.
-          </p>
+      <section className="relative isolate overflow-hidden bg-slate-950">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="BISS Labs testing facility"
+            className="h-full w-full object-cover opacity-55"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-slate-950/40" />
+        </div>
+        
+        {/* Decorative Gradient Circles */}
+        <div className="absolute top-10 right-1/4 w-96 h-96 bg-amber/10 rounded-full blur-3xl opacity-60" />
+        <div className="absolute bottom-0 left-1/3 w-80 h-80 bg-brand-deep/20 rounded-full blur-3xl opacity-40" />
+
+        {/* Content */}
+        <div className="relative isolate container-x py-16 lg:py-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber/30 bg-amber/10 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6">
+              <span className="flex h-2 w-2 rounded-full bg-amber" />
+              Testing Solutions
+            </div>
+            <h1 className="mt-6 text-5xl lg:text-7xl font-extrabold text-white leading-tight">Engineering Testing Capabilities</h1>
+            <p className="mt-6 text-xl text-white/80 max-w-2xl leading-relaxed">
+              From metals and composites to full-scale structural validation, our lab covers 15+ mechanical test types and 20+ composite methods.
+            </p>
+          </div>
         </div>
       </section>
 

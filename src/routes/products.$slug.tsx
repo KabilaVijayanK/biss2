@@ -42,24 +42,44 @@ function ProductDetail() {
   const { product } = Route.useLoaderData();
   return (
     <>
-      <section className="bg-brand-deep text-white py-20">
-        <div className="container-x">
-          <nav className="flex items-center gap-1 text-xs text-white/60">
-            <Link to="/" className="hover:text-amber">
+      <section className="relative isolate overflow-hidden bg-slate-950">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="Product detail banner"
+            className="h-full w-full object-cover opacity-50"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-deep via-slate-950 to-slate-950" />
+        </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-0 w-96 h-96 bg-amber/15 rounded-full blur-3xl opacity-50" />
+        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-brand-deep/25 rounded-full blur-3xl opacity-30" />
+
+        {/* Content */}
+        <div className="relative isolate container-x py-16 lg:py-20">
+          <nav className="flex items-center gap-1 text-xs text-white/60 mb-8">
+            <Link to="/" className="hover:text-amber transition font-medium">
               Home
             </Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/products" className="hover:text-amber">
+            <Link to="/products" className="hover:text-amber transition font-medium">
               Products
             </Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-white/90">{product.title}</span>
+            <span className="text-amber font-semibold">{product.title}</span>
           </nav>
-          <div className="mt-4 text-xs uppercase tracking-widest text-amber font-semibold">
-            Product
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber/30 bg-amber/10 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6">
+              <span className="flex h-2 w-2 rounded-full bg-amber" />
+              Product Details
+            </div>
+            <h1 className="mt-6 text-5xl lg:text-6xl font-extrabold text-white">{product.h1}</h1>
+            <p className="mt-6 text-xl text-white/80 max-w-2xl">{product.tagline}</p>
           </div>
-          <h1 className="mt-2 text-4xl lg:text-6xl font-extrabold">{product.h1}</h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">{product.tagline}</p>
         </div>
       </section>
 

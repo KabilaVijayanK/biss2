@@ -35,16 +35,38 @@ function Contact() {
   const [submitted, setSubmitted] = useState(false);
   return (
     <>
-      <section className="bg-brand-deep text-white py-20">
-        <div className="container-x">
-          <div className="text-xs uppercase tracking-widest text-amber font-semibold">Contact</div>
-          <h1 className="mt-3 text-5xl lg:text-6xl font-extrabold">
-            Get in Touch with Our Engineering Experts
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Let's discuss your testing requirements — from product validation to research support
-            and customized solutions.
-          </p>
+      <section className="relative isolate overflow-hidden bg-slate-950">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="BISS Labs facility"
+            className="h-full w-full object-cover opacity-50"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-deep via-slate-950/80 to-slate-950" />
+        </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-0 right-20 w-96 h-96 bg-amber/15 rounded-full blur-3xl opacity-60" />
+        <div className="absolute bottom-0 left-20 w-80 h-80 bg-brand-deep/30 rounded-full blur-3xl opacity-40" />
+        <div className="absolute top-40 left-1/2 w-72 h-72 bg-amber/5 rounded-full blur-2xl opacity-40" />
+
+        {/* Content */}
+        <div className="relative isolate container-x py-16 lg:py-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/15 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6">
+              <span className="flex h-2 w-2 rounded-full bg-amber animate-pulse" />
+              Get in Touch
+            </div>
+            <h1 className="mt-6 text-5xl lg:text-7xl font-extrabold text-white leading-tight">
+              Connect with Our Engineering Experts
+            </h1>
+            <p className="mt-6 text-xl text-white/80 max-w-2xl leading-relaxed">
+              Let's discuss your testing requirements — from product validation to research support and customized solutions.
+            </p>
+          </div>
         </div>
       </section>
 

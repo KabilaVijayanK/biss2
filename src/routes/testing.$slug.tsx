@@ -42,24 +42,44 @@ function TestingDetail() {
   const { service } = Route.useLoaderData();
   return (
     <>
-      <section className="bg-brand-deep text-white py-20">
-        <div className="container-x">
-          <nav className="flex items-center gap-1 text-xs text-white/60">
-            <Link to="/" className="hover:text-amber">
+      <section className="relative isolate overflow-hidden bg-slate-950">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.png"
+            alt="Testing service banner"
+            className="h-full w-full object-cover opacity-55"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-brand-deep/50 to-slate-950/40" />
+        </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute -top-40 right-1/4 w-96 h-96 bg-amber/10 rounded-full blur-3xl opacity-60" />
+        <div className="absolute bottom-20 -left-20 w-80 h-80 bg-brand-deep/30 rounded-full blur-3xl opacity-30" />
+
+        {/* Content */}
+        <div className="relative isolate container-x py-16 lg:py-20">
+          <nav className="flex items-center gap-1 text-xs text-white/60 mb-8">
+            <Link to="/" className="hover:text-amber transition font-medium">
               Home
             </Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/testing" className="hover:text-amber">
+            <Link to="/testing" className="hover:text-amber transition font-medium">
               Testing
             </Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-white/90">{service.title}</span>
+            <span className="text-amber font-semibold">{service.title}</span>
           </nav>
-          <div className="mt-4 text-xs uppercase tracking-widest text-amber font-semibold">
-            Testing Service
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber/30 bg-amber/10 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6">
+              <span className="flex h-2 w-2 rounded-full bg-amber" />
+              Testing Service
+            </div>
+            <h1 className="mt-6 text-5xl lg:text-6xl font-extrabold text-white">{service.h1}</h1>
+            <p className="mt-6 text-xl text-white/80 max-w-2xl">{service.tagline}</p>
           </div>
-          <h1 className="mt-2 text-4xl lg:text-6xl font-extrabold">{service.h1}</h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">{service.tagline}</p>
         </div>
       </section>
 

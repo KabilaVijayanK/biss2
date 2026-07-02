@@ -54,7 +54,6 @@ export function Navbar() {
       {/* Utility bar */}
       <div className="bg-brand-deep text-white/80 text-xs">
         <div className="container-x flex justify-end gap-6 py-2">
-          <a href="#" className="hover:text-amber">Customer Portal</a>
           <span>|</span>
           <a href="#" className="hover:text-amber flex items-center gap-1">Language <ChevronDown className="w-3 h-3" /></a>
           <span>|</span>
@@ -68,9 +67,8 @@ export function Navbar() {
         onMouseLeave={() => setOpenMenu(null)}
       >
         <div className="container-x flex items-center justify-between h-16 lg:h-20">
-          <Link to="/" className="flex items-center gap-2 font-display font-black text-brand tracking-tight">
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-brand text-white text-sm">B</span>
-            <span className="text-xl">BISS <span className="text-amber">Labs</span></span>
+          <Link to="/" className="flex items-center gap-3 font-display font-black text-brand tracking-tight hover:opacity-100 transition-opacity">
+            <img src="/logo.png" alt="BISS Labs" className="h-18 w-30" />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -119,7 +117,7 @@ export function Navbar() {
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 z-[60] bg-white overflow-y-auto animate-fade-in">
           <div className="flex items-center justify-between p-4 border-b border-border">
-            <span className="font-display font-black text-brand">BISS <span className="text-amber">Labs</span></span>
+            <img src="/logo.png" alt="BISS Labs" className="h-10 w-auto" />
             <button aria-label="Close menu" onClick={() => setMobileOpen(false)}><X className="w-6 h-6" /></button>
           </div>
           <div className="p-4 space-y-1">
