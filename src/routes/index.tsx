@@ -21,6 +21,8 @@ import {
 } from "lucide-react";
 import { Reveal } from "@/components/common/Reveal";
 import { StatCounter } from "@/components/common/StatCounter";
+import aboutLabImage from "@/assets/about-lab.jpg";
+import ctaBannerImage from "@/assets/cta-banner.jpg";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -456,7 +458,7 @@ function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 items-stretch container-x py-20">
           <div className="lg:col-span-3 rounded-lg overflow-hidden">
             <img
-              src="/src/assets/about-lab.jpg"
+              src={aboutLabImage}
               alt="BISS Labs engineers reviewing test data"
               className="w-full h-full object-cover"
               width={1600}
@@ -527,7 +529,7 @@ function Home() {
       {/* Diagonal CTA banner */}
       <section className="relative overflow-hidden">
         <img
-          src="/src/assets/cta-banner.jpg"
+          src={ctaBannerImage}
           alt="Close-up of an extensometer on a metal specimen"
           className="absolute inset-0 h-full w-full object-cover"
           width={1600}
