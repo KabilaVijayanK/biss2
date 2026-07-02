@@ -21,8 +21,6 @@ import {
 } from "lucide-react";
 import { Reveal } from "@/components/common/Reveal";
 import { StatCounter } from "@/components/common/StatCounter";
-import aboutLabImage from "@/assets/about-lab.jpg";
-import ctaBannerImage from "@/assets/cta-banner.jpg";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -197,7 +195,7 @@ function Home() {
           />
           <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" />
         </div>
-        <div className="relative container-x py-16 lg:py-24">
+        <div className="relative container-x py-16 lg:py-20">
           <div className="mx-auto flex max-w-4xl flex-col items-center text-center gap-8 transform -translate-y-4">
             <Reveal>
               <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-white/80 shadow-sm backdrop-blur-sm">
@@ -458,7 +456,7 @@ function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 items-stretch container-x py-20">
           <div className="lg:col-span-3 rounded-lg overflow-hidden">
             <img
-              src={aboutLabImage}
+              src="/assets/about-lab.jpg"
               alt="BISS Labs engineers reviewing test data"
               className="w-full h-full object-cover"
               width={1600}
@@ -529,7 +527,7 @@ function Home() {
       {/* Diagonal CTA banner */}
       <section className="relative overflow-hidden">
         <img
-          src={ctaBannerImage}
+          src="/assets/cta-banner.jpg"
           alt="Close-up of an extensometer on a metal specimen"
           className="absolute inset-0 h-full w-full object-cover"
           width={1600}
