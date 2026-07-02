@@ -15,8 +15,16 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/products", changefreq: "weekly", priority: "0.9" },
           { path: "/testing", changefreq: "weekly", priority: "0.9" },
           { path: "/contact-us", changefreq: "monthly", priority: "0.7" },
-          ...products.map((p) => ({ path: `/products/${p.slug}`, changefreq: "monthly", priority: "0.7" })),
-          ...testingServices.map((t) => ({ path: `/testing/${t.slug}`, changefreq: "monthly", priority: "0.7" })),
+          ...products.map((p) => ({
+            path: `/products/${p.slug}`,
+            changefreq: "monthly",
+            priority: "0.7",
+          })),
+          ...testingServices.map((t) => ({
+            path: `/testing/${t.slug}`,
+            changefreq: "monthly",
+            priority: "0.7",
+          })),
         ];
         const urls = entries
           .map(
