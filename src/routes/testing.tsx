@@ -37,7 +37,7 @@ function TestingIndex() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/banner.png"
+            src="/assets/banner.png"
             alt="BISS Labs testing facility"
             className="h-full w-full object-cover opacity-55"
             width={1920}

@@ -39,7 +39,7 @@ function About() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/banner.png"
+            src="/assets/banner.png"
             alt="BISS Labs testing facility"
             className="h-full w-full object-cover opacity-60"
             width={1920}
@@ -69,7 +69,7 @@ function About() {
       <section className="py-20 bg-background">
         <div className="container-x grid lg:grid-cols-2 gap-14 items-center">
           <Reveal>
-            <img src="/banner.png" alt="BISS Labs engineers at a materials testing bench" className="rounded-lg shadow-lg w-full" width={1600} height={1100} loading="lazy" />
+            <img src="/assets/banner.png" alt="BISS Labs engineers at a materials testing bench" className="rounded-lg shadow-lg w-full" width={1600} height={1100} loading="lazy" />
           </Reveal>
           <Reveal delay={100}>
             <h2 className="text-3xl lg:text-4xl font-bold text-brand-deep">Company Overview</h2>

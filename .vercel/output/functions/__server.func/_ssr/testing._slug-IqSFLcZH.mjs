@@ -3,8 +3,8 @@ import { t as Reveal } from "./Reveal-B5RqkReU.mjs";
 import { A as ChevronRight, L as ArrowRight, M as Check } from "../_libs/lucide-react.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { r as testingServices } from "./testing-DVrxKiIT.mjs";
-import { t as Route } from "./testing._slug-Byg6CapK.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/testing._slug-DXbLgmgo.js
+import { t as Route } from "./testing._slug-C1_V0Dpi.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/testing._slug-IqSFLcZH.js
 var import_jsx_runtime = require_jsx_runtime();
 function List({ title, items }) {
 	if (!items?.length) return null;
@@ -26,46 +26,62 @@ function List({ title, items }) {
 function TestingDetail() {
 	const { service } = Route.useLoaderData();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
-		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-			className: "bg-brand-deep text-white py-20",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "container-x",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-						className: "flex items-center gap-1 text-xs text-white/60",
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+			className: "relative isolate overflow-hidden bg-slate-950",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "absolute inset-0",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: "/assets/banner.png",
+						alt: "Testing service banner",
+						className: "h-full w-full object-cover opacity-55",
+						width: 1920,
+						height: 1080
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-r from-slate-950 via-brand-deep/50 to-slate-950/40" })]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -top-40 right-1/4 w-96 h-96 bg-amber/10 rounded-full blur-3xl opacity-60" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute bottom-20 -left-20 w-80 h-80 bg-brand-deep/30 rounded-full blur-3xl opacity-30" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "relative isolate container-x py-16 lg:py-20",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+						className: "flex items-center gap-1 text-xs text-white/60 mb-8",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: "/",
-								className: "hover:text-amber",
+								className: "hover:text-amber transition font-medium",
 								children: "Home"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-3 h-3" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: "/testing",
-								className: "hover:text-amber",
+								className: "hover:text-amber transition font-medium",
 								children: "Testing"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-3 h-3" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "text-white/90",
+								className: "text-amber font-semibold",
 								children: service.title
 							})
 						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "mt-4 text-xs uppercase tracking-widest text-amber font-semibold",
-						children: "Testing Service"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-						className: "mt-2 text-4xl lg:text-6xl font-extrabold",
-						children: service.h1
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-4 text-lg text-white/70 max-w-2xl",
-						children: service.tagline
-					})
-				]
-			})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "max-w-3xl",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "inline-flex items-center gap-2 rounded-full border border-amber/30 bg-amber/10 px-4 py-2 text-sm text-amber font-semibold backdrop-blur-sm mb-6",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "flex h-2 w-2 rounded-full bg-amber" }), "Testing Service"]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+								className: "mt-6 text-5xl lg:text-6xl font-extrabold text-white",
+								children: service.h1
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-6 text-xl text-white/80 max-w-2xl",
+								children: service.tagline
+							})
+						]
+					})]
+				})
+			]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 			className: "py-16 bg-background",

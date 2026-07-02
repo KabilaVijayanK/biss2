@@ -68,7 +68,7 @@ export function Navbar() {
       >
         <div className="container-x flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-3 font-display font-black text-brand tracking-tight hover:opacity-100 transition-opacity">
-            <img src="/logo.png" alt="BISS Labs" className="h-18 w-30" />
+            <img src="/assets/logo.png" alt="BISS Labs" className="h-18 w-30" />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -117,7 +117,7 @@ export function Navbar() {
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 z-[60] bg-white overflow-y-auto animate-fade-in">
           <div className="flex items-center justify-between p-4 border-b border-border">
-            <img src="/logo.png" alt="BISS Labs" className="h-10 w-auto" />
+            <img src="/assets/logo.png" alt="BISS Labs" className="h-10 w-auto" />
             <button aria-label="Close menu" onClick={() => setMobileOpen(false)}><X className="w-6 h-6" /></button>
           </div>
           <div className="p-4 space-y-1">

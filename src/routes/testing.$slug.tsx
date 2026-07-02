@@ -46,7 +46,7 @@ function TestingDetail() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/banner.png"
+            src="/assets/banner.png"
             alt="Testing service banner"
             className="h-full w-full object-cover opacity-55"
             width={1920}

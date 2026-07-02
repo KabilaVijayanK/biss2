@@ -3,14 +3,14 @@ import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider 
 import { E as Facebook, _ as Linkedin, j as ChevronDown, l as Search, m as Menu, n as Youtube, r as X } from "../_libs/lucide-react.mjs";
 import { n as products } from "./products-DRThLdRL.mjs";
 import { _ as useRouter, c as HeadContent, f as Outlet, g as Link, h as createRootRouteWithContext, m as createFileRoute, p as lazyRouteComponent, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$7 } from "./products._slug-BL-VPAID.mjs";
+import { t as Route$7 } from "./products._slug-Ckjj2R4b.mjs";
 import { r as testingServices } from "./testing-DVrxKiIT.mjs";
-import { t as Route$8 } from "./testing._slug-Byg6CapK.mjs";
+import { t as Route$8 } from "./testing._slug-C1_V0Dpi.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DOlN-yt8.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-J_wgVsa1.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-E8PvTz8V.css";
+var styles_default = "/assets/styles-NUvp--s5.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -253,19 +253,14 @@ function Navbar() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "container-x flex items-center justify-between h-16 lg:h-20",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: "/",
-								className: "flex items-center gap-2 font-display font-black text-brand tracking-tight",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "inline-flex items-center justify-center w-9 h-9 rounded-md bg-brand text-white text-sm",
-									children: "B"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-									className: "text-xl",
-									children: ["BISS ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-amber",
-										children: "Labs"
-									})]
-								})]
+								className: "flex items-center gap-3 font-display font-black text-brand tracking-tight hover:opacity-100 transition-opacity",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									src: "/assets/logo.png",
+									alt: "BISS Labs",
+									className: "h-18 w-30"
+								})
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "hidden lg:flex items-center gap-8",
@@ -350,12 +345,10 @@ function Navbar() {
 				className: "lg:hidden fixed inset-0 z-[60] bg-white overflow-y-auto animate-fade-in",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "flex items-center justify-between p-4 border-b border-border",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-						className: "font-display font-black text-brand",
-						children: ["BISS ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "text-amber",
-							children: "Labs"
-						})]
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: "/assets/logo.png",
+						alt: "BISS Labs",
+						className: "h-10 w-auto"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 						"aria-label": "Close menu",
 						onClick: () => setMobileOpen(false),
@@ -809,8 +802,8 @@ var Route$6 = createRootRouteWithContext()({
 			},
 			{
 				rel: "icon",
-				href: "/favicon.ico",
-				type: "image/x-icon"
+				href: "/assets/logo.png",
+				type: "image/png"
 			},
 			{
 				rel: "preconnect",
@@ -855,7 +848,7 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$4 = () => import("./testing-Ch3FRbgO.mjs");
+var $$splitComponentImporter$4 = () => import("./testing-C6oPRCzE.mjs");
 var Route$5 = createFileRoute("/testing")({
 	head: () => ({ meta: [
 		{ title: "Testing Services — Mechanical, Structural, Composite & Medical | BISS Labs" },
@@ -918,7 +911,7 @@ var Route$4 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$3 = () => import("./products-C_F9yd70.mjs");
+var $$splitComponentImporter$3 = () => import("./products-C_9_qz28.mjs");
 var Route$3 = createFileRoute("/products")({
 	head: () => ({ meta: [
 		{ title: "Products — Universal Testing Machines & Testing Systems | BISS Labs" },
@@ -937,7 +930,7 @@ var Route$3 = createFileRoute("/products")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./contact-us-D7iMSFTS.mjs");
+var $$splitComponentImporter$2 = () => import("./contact-us-CqbJRH6o.mjs");
 var Route$2 = createFileRoute("/contact-us")({
 	head: () => ({ meta: [
 		{ title: "Contact BISS Labs | Material Testing Laboratory in India" },
@@ -956,7 +949,7 @@ var Route$2 = createFileRoute("/contact-us")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./about-us-XjH9NNhn.mjs");
+var $$splitComponentImporter$1 = () => import("./about-us-C2sx9uDi.mjs");
 var Route$1 = createFileRoute("/about-us")({
 	head: () => ({ meta: [
 		{ title: "About BISS Labs | Material Testing Laboratory & Engineering Excellence" },
@@ -975,7 +968,7 @@ var Route$1 = createFileRoute("/about-us")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-k4043p2K.mjs");
+var $$splitComponentImporter = () => import("./routes-CS9SS_1-.mjs");
 var Route = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
 var TestingRoute = Route$5.update({
 	id: "/testing",
