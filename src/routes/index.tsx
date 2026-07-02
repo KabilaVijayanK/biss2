@@ -54,7 +54,7 @@ function Home() {
       <section className="relative isolate overflow-hidden">
         <img src={heroImg} alt="BISS Labs testing facility with a universal testing machine" className="absolute inset-0 h-full w-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/95 via-brand-deep/70 to-brand-deep/10" />
-        <div className="relative container-x py-28 lg:py-40">
+        <div className="relative container-x py-28 lg:py-20">
           <div className="max-w-2xl">
             <Reveal>
               <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 backdrop-blur px-3 py-1 text-xs font-semibold text-white/90 uppercase tracking-widest">
